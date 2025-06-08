@@ -1,13 +1,13 @@
 # zsh
 
+컨테이너 터미널의 편리한 사용을 위해 `zsh`과 주요 플러그인을 설치하는 Dockrefile들  
+기본적으로 사용하는 터미널이 `zsh`및 `powerlevel10k`를 사용하기 적합한 환경이어야 함
+
 - [`zsh`](https://www.zsh.org/)
 - [`oh-my-zsh`](https://ohmyz.sh/)
 - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k)
 - [`zhs-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions)
 - [`syntax-highlighting`](https://github.com/zsh-users/zsh-autosuggestions)
-
-컨테이너 터미널의 편리한 사용을 위해 `zsh`과 주요 플러그인을 설치하는 Dockrefile들  
-기본적으로 사용하는 터미널이 `zsh`및 `powerlevel10k`를 사용하기 적합한 환경이어야 함
 
 ---
 
@@ -18,6 +18,7 @@
 
 ```Dockerfile
 ...
+
 if [[ ! -f ~/.p10k.zsh ]]; then
   p10k configure
 else
